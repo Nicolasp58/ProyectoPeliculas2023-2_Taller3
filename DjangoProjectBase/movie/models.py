@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Movie(models.Model):
   title = models.CharField(max_length=100)
   description = models.CharField(max_length=1000)
-  image = models.ImageField(upload_to='movie/images/')
+  image = models.ImageField(upload_to='movie/images/', default = 'movie/images/default.jpg')
   url = models.URLField(blank=True)
   
   def __str__(self):
