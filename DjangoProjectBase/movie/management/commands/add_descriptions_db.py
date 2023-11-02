@@ -8,7 +8,7 @@ class Command(BaseCommand):
     help = 'Load movies from movie_descriptions.json into the Movie model'
 
     def handle(self, *args, **kwargs):
-        # Construct the full path to the JSON file
+        # Construct the full path to the JSON file|
         #Recuerde que la consola está ubicada en la carpeta DjangoProjectBase.
         #El path del archivo movie_descriptions con respecto a DjangoProjectBase sería la carpeta anterior
         json_file_path = '../movie_descriptions.json' 
